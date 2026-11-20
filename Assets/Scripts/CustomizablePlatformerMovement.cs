@@ -164,6 +164,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
     {
         if (context.started && controlEnabled)
         {
+                
             Debug.Log("Jump!");
             jumpInput = true;
             jumpReleased = false;
