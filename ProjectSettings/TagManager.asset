@@ -11,13 +11,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - Background
   - Foliage
   - Platforms
-  - 
+  - Player
   - 
   - 
   - 
@@ -52,6 +52,9 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 1820873561
+    locked: 0
+  - name: Player
+    uniqueID: 2760151661
     locked: 0
   m_RenderingLayers:
   - Default
