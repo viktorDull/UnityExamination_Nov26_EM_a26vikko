@@ -23,7 +23,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
     
     
     // Physics and collision
-    [FormerlySerializedAs("rigidbody")] [SerializeField] private Rigidbody2D rb2D;
+    [SerializeField] private Rigidbody2D rb2D;
     [SerializeField] private BoxCollider2D groundCheckCollider;
     [SerializeField] private LayerMask groundLayer = ~0; // ~0 is referring to EVERY layer.
     
@@ -52,7 +52,7 @@ public class CustomizablePlatformerMovement : MonoBehaviour
     void Update()
     {
         //---Handle vertical velocity---
-        
+        Debug.Log($"Touching Ground: {isGrounded}");
         isGrounded = IsGrounded();
         ApplyGravity();
         
